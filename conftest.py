@@ -17,7 +17,7 @@ def pytest_runtest_makereport(item, call):
 def web_browser(request, selenium):
     browser = selenium
     browser.set_window_size(1400, 800)
-    # browser.implicitly_wait(10)
+    browser.implicitly_wait(10)
 
     # Return browser instance to test case:
     yield browser
